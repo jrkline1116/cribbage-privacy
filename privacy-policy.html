@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Cribbage Hand Scanner</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --felt: #1a3a2a;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --dark: #0d1f17;
+    --text: #f0ebe0;
+    --dim: rgba(240,235,224,0.55);
+    --border: rgba(201,168,76,0.15);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--felt);
+    background-image:
+      radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.1) 0%, transparent 60%),
+      repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(0,0,0,0.02) 3px, rgba(0,0,0,0.02) 6px);
+    min-height: 100vh;
+    font-family: 'DM Mono', monospace;
+    color: var(--text);
+    padding: 0 0 80px;
+  }
+
+  /* ── Header ── */
+  .header {
+    border-bottom: 1px solid var(--border);
+    padding: 40px 24px 32px;
+    text-align: center;
+    background: rgba(0,0,0,0.15);
+  }
+
+  .suit-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .suit { font-size: 1.2rem; opacity: 0.6; }
+  .suit.red { color: #c0392b; }
+  .suit.black { color: var(--dim); }
+
+  .app-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.02em;
+    margin-bottom: 6px;
+  }
+
+  .page-title {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--dim);
+  }
+
+  /* ── Content ── */
+  .content {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px 0;
+  }
+
+  .last-updated {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: var(--dim);
+    margin-bottom: 36px;
+    text-transform: uppercase;
+  }
+
+  .section {
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-child {
+    border-bottom: none;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    margin-bottom: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  .section p {
+    font-size: 0.82rem;
+    line-height: 1.8;
+    color: var(--dim);
+    margin-bottom: 12px;
+  }
+  .section p:last-child { margin-bottom: 0; }
+
+  .highlight {
+    color: var(--text);
+  }
+
+  .contact-box {
+    background: rgba(0,0,0,0.2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 16px;
+  }
+  .contact-box p {
+    margin-bottom: 0 !important;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 0.65rem;
+    color: var(--dim);
+    letter-spacing: 0.1em;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="suit-row">
+    <span class="suit red">♥</span>
+    <span class="suit black">♠</span>
+    <span class="suit red">♦</span>
+    <span class="suit black">♣</span>
+  </div>
+  <div class="app-name">Cribbage Hand Scanner</div>
+  <div class="page-title">Privacy Policy</div>
+</div>
+
+<div class="content">
+
+  <div class="last-updated">Last updated: February 2026</div>
+
+  <div class="section">
+    <div class="section-title">Overview</div>
+    <p>Cribbage Hand Scanner is a mobile application that uses your device's camera to photograph playing cards and calculate your cribbage hand score. We take your privacy seriously and are committed to being transparent about how the app works.</p>
+    <p><span class="highlight">The short version:</span> we don't collect, store, or sell your personal data. We don't require you to create an account. We don't know who you are.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Camera & Images</div>
+    <p>Cribbage Hand Scanner uses your device camera solely to photograph your playing cards. When you take a photo:</p>
+    <p>The image is <span class="highlight">temporarily sent to a secure processing server</span> to identify the cards using AI vision technology. The image is used only to detect the card ranks and suits and is <span class="highlight">not stored, logged, or retained</span> after processing is complete.</p>
+    <p>We do not build any database of your photos. We do not use your images for training AI models. Images are discarded immediately after card detection is performed.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Data We Do Not Collect</div>
+    <p>We do not collect or store any of the following:</p>
+    <p><span class="highlight">Personal information</span> — no name, email address, phone number, or account information is required or collected.</p>
+    <p><span class="highlight">Location data</span> — the app does not access or track your location.</p>
+    <p><span class="highlight">Device identifiers</span> — we do not collect device IDs, advertising IDs, or any other device-specific identifiers.</p>
+    <p><span class="highlight">Usage analytics</span> — we do not track how you use the app, how many hands you score, or any behavioral data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Advertising</div>
+    <p>Cribbage Hand Scanner displays advertisements provided by Google AdMob. Google's advertising SDK may collect certain information as described in <span class="highlight">Google's Privacy Policy</span>, which may include device information and advertising identifiers for the purpose of serving relevant ads.</p>
+    <p>We do not have access to or control over the data collected by Google AdMob. You can review Google's data practices at <span class="highlight">policies.google.com/privacy</span>.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Third-Party Services</div>
+    <p>The app uses the following third-party services:</p>
+    <p><span class="highlight">OpenAI (GPT-4o)</span> — used to process card images and identify playing cards. Images are sent to OpenAI's API for analysis. OpenAI's privacy policy applies to this processing.</p>
+    <p><span class="highlight">Google AdMob</span> — used to display banner advertisements within the app.</p>
+    <p>We do not share any personal data with these services because we do not collect any personal data to share.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Children's Privacy</div>
+    <p>Cribbage Hand Scanner is rated for Everyone and does not knowingly collect any information from children under the age of 13. The app contains no features that require personal data from any user of any age.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Changes to This Policy</div>
+    <p>If we make changes to this privacy policy we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Contact</div>
+    <p>If you have any questions about this privacy policy or the app, please reach out:</p>
+    <div class="contact-box">
+      <p>Cribbage Hand Scanner<br>For privacy inquiries, contact us through the Google Play Store listing.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 Cribbage Hand Scanner · All rights reserved
+  </div>
+
+</div>
+
+</body>
+</html>
